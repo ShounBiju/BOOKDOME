@@ -16,48 +16,576 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grey+Qo&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&family=Teko:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Nav Bar -->
     <header>
-        <nav class="navbar navbar-light" style="background-color: #f7e3fd;">
-            <!-- Navbar content -->
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./Images/pic1 (1).png" alt="" width="270" height="74" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <div class="col-12">
+                      <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <button class="btn btn-purple btn-purple-round" type="submit">Search</button>
+                  </form>                   
+            </div>
+                <div class="d-flex">
+                    <button class="btn btn-purple me-2" type="button">Login</button>
+                    <button class="btn btn-purple" type="button">Sign Up</button>
                 </div>
-        </nav>
+            </div>
+          </nav>
+
+          <!-- Horizontal Line -->
+            <hr class="separator">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Genre">Genre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
+    <!-- Banner -->
+    <div class="image-container">
+        <img src="./Images/img2.jpg" alt="Holiday" width="100%" height="400px">
+        <div class="card-overlay">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Discover Your Next Great Read</h5>
+                    <p class="card-text text-dark">Curated Collections, Personalized Recommendations, and More</p>
+                    <a href="#" class="btn btn-light">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+    <!-- Home -->
+    <section id="Home" class="text-center">
+        <h1 class="featured-heading dancing-script">Featured Books</h1><br><br>
+
+        <!-- Container for smaller carousel -->
+        <div class="carousel-container" style="max-width: 600px; margin: 0 auto;">
+            <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/15a6f610463583.560e56a82c21c.jpg" class="d-block w-100" alt="To Kill a Mockingbird">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="featured-heading dark-text">To Kill a Mockingbird</h5>
+                            <p class="featured-heading dark-text">A gripping and heart-wrenching tale of racial injustice in the Deep South.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PRnf5zOok1fF3ovegvcISA.jpeg" class="d-block w-100" alt="1984">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="featured-heading dark-text">1984</h5>
+                            <p class="featured-heading dark-text">A dystopian novel exploring the dangers of totalitarianism and political ideology.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="https://ntvb.tmsimg.com/assets/p159494_v_h8_ad.jpg?w=960&h=540" class="d-block w-100" alt="Pride and Prejudice">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="featured-heading dark-text">Pride and Prejudice</h5>
+                            <p class="featured-heading dark-text">A classic romance exploring love, family, and social standing in 19th-century England.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <img src="https://static.toiimg.com/thumb/msid-103663554,imgsize-67210,width-400,resizemode-4/103663554.jpg" class="d-block w-100" alt="The Great Gatsby">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="featured-heading dark-text">The Great Gatsby</h5>
+                            <p class="featured-heading dark-text">A tragic story of the American Dream and disillusionment in the Jazz Age.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#bookCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#bookCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="About" class="about-section">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/ac/74/54/ac745423f009e9efd45cc8ba9d80d8c6.jpg" alt="About Us" class="img-fluid">
+            <!-- About Card Overlay -->
+            <div class="card-overlay about-card">
+                <div class="card-body">
+                    <h2 class="about-heading dancing-script">About Us</h2>
+                    <p class="about-text">
+                        Welcome to Bookdom, your go-to destination for discovering a world of books. Whether you're a passionate reader, a curious learner, or someone seeking inspiration, we offer a carefully curated collection of books across various genres.
+                    </p>
+                    <p class="about-text">
+                        We believe that books have the power to transform lives, and we are dedicated to helping you find your next great read. Explore our featured collections, personalized recommendations, and enjoy a seamless browsing experience.
+                    </p>
+                    <p class="about-text">
+                        Join us on this literary journey and dive into the stories that move you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+
+    <!-- Gallery Section -->
+    <section id="Gallery" class="gallery-section">
+        <h1 class="dancing-script text-center dark-text large-font">Gallery</h1><br><br>
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/b0/f0/f5/b0f0f529dba4558a8037ffa9306d180f.jpg" height="400px" class="card-img" alt="Fiction">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Sci-Fi</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/4e/ac/a6/4eaca68da01d1a58d3f57c4437589655.jpg" height="400px" class="card-img" alt="Adventure">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Adventure</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/70/d6/e7/70d6e7f2443194d12c8f6209b7a40dbe.jpg" height="400px" class="card-img" alt="Magic">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Magic</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/736x/9d/b8/65/9db865e43eb19d79ac4b208004e06c5c.jpg" class="card-img" height="400px" alt="Light Novels">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Light Novels</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/15/85/f7/1585f74589299b1bcd5e0527a9bc9d42.jpg" height="400px" class="card-img" alt="Fiction">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Thriller</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/65/a8/71/65a871c1310171aa0d59ac371da21af4.jpg" height="400px" class="card-img" alt="Adventure">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Horror</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/1c/06/7a/1c067a26eb4a89f0c7d539905479681f.jpg" height="400px" class="card-img" alt="Magic">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Mystery</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card genre-card">
+                        <img src="https://i.pinimg.com/564x/c1/67/14/c16714ba36a0be5c33bda4858903660e.jpg" class="card-img" height="400px" alt="Light Novels">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <h5 class="card-title genre-title">Biography</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GENRE -->
+    <section id="Genre" class="container mt-5">
+        <!-- Light Novel Genre -->
+        <h2 class="genre-title text-center mb-5">Light Novel</h2>
+        <div class="row justify-content-between">
+            <!-- Book 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/32/42/d0/3242d0bd706231bf7556940eba168890.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Overlord</h5>
+                        <p class="card-text">$15.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/6f/aa/cd/6faacd7ca2b60241a1f439bb436d387c.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Re:Zero</h5>
+                        <p class="card-text">$12.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★★
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/09/4b/9c/094b9cca2b37456f2bf28d6a9761e5ba.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">I Want to Eat Your Pancreas</h5>
+                        <p class="card-text">$18.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★★
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/46/f3/d2/46f3d2dec1ba215431230f2adbbc5ac5.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">86</h5>
+                        <p class="card-text">$10.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Science Fiction Genre -->
+        <h2 class="genre-title text-center mb-5"> ScienceFiction</h2>
+        <div class="row justify-content-between">
+            <!-- Book 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/1b/83/b7/1b83b7fd9aba1bc0a5087968dbe4ce70.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dune</h5>
+                        <p class="card-text">$15.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/86/db/33/86db338662967c2ce74f35f40a7bf8d9.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Time Machine</h5>
+                        <p class="card-text">$12.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★☆☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/d3/f8/25/d3f825872b0d1db3ed16c7aff2961c21.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">I Robot</h5>
+                        <p class="card-text">$18.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★★
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/07/b2/c0/07b2c0c183df45c0d70ddc8717c2d68f.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Snow Crash</h5>
+                        <p class="card-text">$10.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horror Genre -->
+        <h2 class="genre-title text-center mb-5"> Horror</h2>
+        <div class="row justify-content-between">
+            <!-- Book 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/1b/83/b7/1b83b7fd9aba1bc0a5087968dbe4ce70.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dune</h5>
+                        <p class="card-text">$15.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/86/db/33/86db338662967c2ce74f35f40a7bf8d9.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Time Machine</h5>
+                        <p class="card-text">$12.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★☆☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/62/6f/6b/626f6bffe9c8270d99c3786cb9cb8a82.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sherlock Holmes</h5>
+                        <p class="card-text">$18.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★★
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/07/b2/c0/07b2c0c183df45c0d70ddc8717c2d68f.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Snow Crash</h5>
+                        <p class="card-text">$10.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mystery Genre -->
+        <h2 class="genre-title text-center mb-5"> Mystery</h2>
+        <div class="row justify-content-between">
+            <!-- Book 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/86/db/33/86db338662967c2ce74f35f40a7bf8d9.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Time Machine</h5>
+                        <p class="card-text">$12.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★☆☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/1b/83/b7/1b83b7fd9aba1bc0a5087968dbe4ce70.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dune</h5>
+                        <p class="card-text">$15.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/07/b2/c0/07b2c0c183df45c0d70ddc8717c2d68f.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Snow Crash</h5>
+                        <p class="card-text">$10.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★☆
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="book-card card h-100">
+                    <img src="https://i.pinimg.com/564x/d3/f8/25/d3f825872b0d1db3ed16c7aff2961c21.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">I Robot</h5>
+                        <p class="card-text">$18.99</p>
+                        <div class="star-rating mb-2">
+                            ★★★★★
+                        </div>
+                        <button class="btn btn-outline-primary btn-block">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- contact -->
+    <!-- Contact Section -->
+    <section id="Contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <!-- Contact Form -->
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+     <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #ce9bff;">
+        <div class="container p-4 pb-0">
+            <div class="row">
+                <!-- About section -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase" style="color: #6a1b9a;">About Bookdom</h5>
+                    <p style="color: #2f1252;">
+                        Bookdom is your one-stop destination for discovering and exploring books across various genres. Dive into a world of stories, knowledge, and adventure with our carefully curated collections.
+                    </p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase" style="color: #6a1b9a;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#Home" class="text-white" style="color: #4a148c; text-decoration: none;">Home</a></li>
+                        <li><a href="#About" class="text-white" style="color: #4a148c; text-decoration: none;">About Us</a></li>
+                        <li><a href="#Gallery" class="text-white" style="color: #4a148c; text-decoration: none;">Gallery</a></li>
+                        <li><a href="#Genre" class="text-white" style="color: #4a148c; text-decoration: none;">Genre</a></li>
+                        <li><a href="#Contact" class="text-white" style="color: #4a148c; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase" style="color: #6a1b9a;">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Fiction City, B1234</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> support@bookdom.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-color: #d1a6f3; margin: 20px 0;">
+
+        <div class="text-center p-3" style="background-color: #d1a6f3;">
+            © 2024 Bookdom. All Rights Reserved.
+        </div>
+    </footer>
+
 </body>
 </html>

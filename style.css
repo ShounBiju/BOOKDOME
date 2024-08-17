@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&family=Teko:wght@300..700&family=Tiny5&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+   font-style: normal;
+}
+
+.large-font {
+    font-size: 5rem; /* Adjust the size as needed */
+}
+
+
+
+.btn-purple {
+    background-color: #683ab7ce; /* Adjust color as needed */
+    border-color: #673AB7;
+    color: white;
+}
+
+.btn-purple-round {
+    border-radius: 27%; /* Creates a perfect circle */
+}
+
+.navbar-nav .nav-link {
+    color: purple;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link {
+    color: purple;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 20px; /* Adds gap between the links */
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: purple;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link:focus::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: purple;
+}
+
+.nav-link.active::after {
+    width: 80%; 
+}
+
+/* Remove the default underline from the active link */
+.navbar-nav .nav-link.active {
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%; /* Adjust this width to control the size of the underline */
+}
+
+hr.separator {
+    border: none;
+    border-top: 3px solid #80486c; /* Darker gray color */
+    margin: 20px 0; /* Adds space around the separator */
+}
+
+/* Add gap between the second navbar's contents */
+.navbar-nav {
+    margin-top: 5px; /* Adjusts gap between the second navbar's items */
+}
+
+
+.card-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: rgba(108, 108, 108, 0.512); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-light {
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-light:hover {
+    background-color: #f1f1f1; /* Light color on hover */
+    color: #333333; /* Darker text color on hover */
+}
+
+@media (max-width: 768px) {
+    .card-overlay {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+
+    .btn-light {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+
+#Home {
+    padding: 50px 0; /* Adjust padding to create space around the section */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+
+/* Featured Books Section */
+.featured-heading {
+    text-align: center;
+    color: #683ab7ce; /* Set your preferred color */
+    margin-bottom: 30px; /* Space after the heading */
+    font-size: 6rem;
+}
+
+
+/* Adjust carousel image height */
+.carousel-item img {
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-container {
+    max-width: 600px; /* Adjust the maximum width of the carousel */
+    margin: 0 auto; /* Center the carousel on the page */
+}
+
+.carousel-inner img {
+    height: 300px; /* Adjust the height of the carousel images */
+    object-fit: cover; /* Ensure images cover the entire area */
+}
+
+.featured-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.dark-text {
+    color: #ecc9ffcf; /* Dark gray color */
+}
+
+.about-section {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    padding: 60px 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8A2BE2; /* Violet color */
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #4B0082; /* Darker shade of violet */
+}
+
+
+.genre-card {
+    position: relative;
+    border: none;
+}
+
+.genre-card .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+}
+
+/* Genre Title Styling */
+.genre-title {
+    font-size: 2.5rem;
+    color: #4A148C;
+    margin-bottom: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Card Styling */
+.book-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #eddaff;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.star-rating {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn-outline-primary {
+    border: 2px solid #4A148C;
+    color: #4A148C;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4A148C;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .genre-title {
+        font-size: 2rem;
+    }
+
+    .book-card img {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn-outline-primary {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+.contact-section {
+    background-color: #e7ceff; /* Light gray background */
+}
+
+.contact-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #683ab7; /* Violet */
+}
+
+.contact-section .card {
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-section .btn-primary {
+    background-color: #683ab7; /* Violet */
+    border-color: #683ab7;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #5a33a5; /* Darker violet on hover */
+    border-color: #5a33a5;
+}
